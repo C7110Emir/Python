@@ -91,9 +91,6 @@ print(miles_conerter)
 print(not 0 and "write me")
 
 
-
-
-
 def whatever(n,num,check):
     if n % 2 == 0 and n % 4 == 0:
         print('your mom is gay: ')
@@ -111,19 +108,22 @@ def whatever(n,num,check):
     else:
         print('kill your self while jumping off the cliff')
 
-
-
 whatever(float(input('you fuckin dumbfuck')),float(input('kick yourself in balls')),float(input('shoot your mom then yourself')))
 '''
-
 a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+user_num = float(input('give a num'))
 def whatever():
     b = []
     for i in a:
-        if i >= 5:
+        if i >= user_num:
             continue
         else:
             b.append(i)
     print(b)
 whatever()
-        
+  
+
+
+
+
