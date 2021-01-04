@@ -1033,9 +1033,74 @@ print(round(e))
 
 d = float(input('what is the payroll of the employee '))
 
-print('$',"{:.2f}".format(d))
+print('$'+"{:.2f}".format(d))
 
+
+k = float(input('what is the payroll of the employee '))
+
+print('$'+"{:.2f}".format(k))
+
+
+class Employee:
+
+    ganyotcu = 50000
+
+    def __init__(self,FirstName,LastName,Payment,lastyearpayment):
+        self.first = FirstName
+        self.last = LastName
+        self.pay = Payment
+        self.lastyear = lastyearpayment
+
+    def payroll(self):
+        print(self.pay - self.lastyear)
+        
+    
+emp1 = Employee('Corey','John', 50000, 40000)
+
+emp1.payroll()
+
+List = [1, 3, 7, 4, 3, 0, 3, 6, 3]
+print(List)
+
+def most_frequent(List): 
+    return max(set(List), key = List.count) 
+a = most_frequent(List)
+b = []
+for i in List:
+    if i == a:
+        b.append(i)
+c = len(b)
+
+print('the most frequent number is {} and it was {} times repeated'.format(a,c))
+
+section_3_5 = "python data types and useful operations"
+print(str.title(section_3_5))
+
+print(int("5" + "1"))
+print(str("5" + "1"))
+print("5" + "1")
+
+
+var1 = "sleep"
+var2 = "eat"
+var3 = "better"
+var4 = "life"
+
+sentence = f"The less you {var1} and {var2}, the {var3} your {var4} will be."
+
+print(sentence)
+
+def palindrome(x):
+    k = str(x)
+    if k[0:] == k[::-1]:
+        return True
+    else:
+        return False        
+
+print(palindrome(121))
 '''
+
+
 
 
 
