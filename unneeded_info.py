@@ -1000,7 +1000,7 @@ class player():
 p1 = player('Emir Birlik', 18, 187, 85)
 
 print(p1.get_age())
-'''
+
 
 b = [True, False, False, False, False]
 d = 0
@@ -1015,3 +1015,27 @@ for i in b:
         print('nothing')
 
 print(d)
+
+
+
+
+sales = {
+  "cost_value": 31.87,
+  "sell_value": 45.00,
+  "inventory": 1000
+}  
+
+e = (sales.get("sell_value") - sales.get("cost_value")) * sales.get('inventory')
+
+print(round(e))
+
+
+
+d = float(input('what is the payroll of the employee '))
+
+print('$',"{:.2f}".format(d))
+
+'''
+
+
+
