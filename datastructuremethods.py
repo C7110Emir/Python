@@ -1,3 +1,4 @@
+'''
 c = {
     'example': 5,
     'XD':'whatever',
@@ -72,3 +73,17 @@ y = thistuple.index(8) # gives the index of the VALUE
 
 ####################################################################
 ####################################################################
+'''
+
+
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+
+print(type(thistuple))
+
+d = list(thistuple)
+
+print(type(d))
+
+d.append(25)
+
+print(tuple(d))
