@@ -1,4 +1,8 @@
 '''
+import os
+clear = lambda: os.system('cls')
+clear()
+
 str="haha"
 
 x=str[::-1]
@@ -1288,7 +1292,7 @@ for k in fruits:
     List.append((k, quant, amount))
 print(List)
 
-'''
+
 
 abc_list=['a', 'b', 'c']
 num_list=[1, 2, 3]
@@ -1296,7 +1300,185 @@ for char in abc_list:
     for num in num_list:
         print(char, num)
 
+names = ["Ahmed", "Aisha", "Adam", "Joseph", "Gabriel"]
 
+for i in names:
+    print('Hello', i)
+
+numbers =[]
+for l in range(1,6):
+    numbers.append(l)
+    numbers.extend(range(1,6))
+
+print(numbers)
+
+word = input("enter a word: ")
+seperated = []
+for i in word:
+    seperated.append(i)
+seperated="-".join(seperated)
+print(seperated)
+
+
+a = ['one','two','three','four']
+b = [1,2,3,4]
+
+print(dict(zip(a,b)))
+
+
+even = []
+odd = []
+
+for i in range(1,11):
+    if i % 2 == 0:
+        even.append(i)
+    else: 
+        odd.append(i)
+
+print(even , odd)
+
+
+
+i = 1
+
+while True:
+    if i % 3 == 0:
+        break
+    print(i)
+
+    i += 1
+
+
+
+numbers = [3,7,1]
+
+# start parameter is not provided
+numbers_sum = sum(numbers)
+print(numbers_sum)
+'''
+
+
+
+import os
+clear = lambda: os.system('cls')
+clear()
+
+
+
+
+
+class Node:
+
+    def __init__(self, value = None, next= None):
+        self.value = value
+        self.next = next
+
+class Objcreator:
+    def __init__(self):
+        self.head = None
+
+
+    def print(self):
+        datalist = []
+        if self.head == None:
+            print('why did you even create all this mess if you are not going to pass in something???!!?!??!?!?!?!??!?!?!?!?!?!??!?!?!??!?????')
+        else:
+            sechead = self.head
+            while True:
+                if sechead.next == None:
+                    datalist.append(sechead.value)
+                    print(datalist)
+                    break
+                datalist.append(sechead.value)
+                sechead = sechead.next
+
+    def lelenght(self):
+        if self.head == None:
+            print('lenght is 0')
+            return 0
+        else:
+            sechead = self.head
+            i = 0
+            while True:
+                if sechead == None:
+                    return i
+
+                sechead = sechead.next
+                i += 1 
+            
+    def addoverindex(self,index,value):
+        newnode = Node(value)
+        if self.lelenght() < index:
+            print('out of index')
+        else:
+            sechead = self.head
+            i = 0
+            while True:
+                if i == index - 1:
+                    newnode.next = sechead.next
+                    sechead.next = newnode
+                    break
+                sechead = sechead.next
+                i += 1
+
+
+
+    def Beginning(self, value):
+        newnode = Node(value)
+        if self.head == None:
+            self.head = newnode
+        else:
+            sechead = self.head
+            newnode.next = sechead
+            self.head = newnode
+
+    def endadder(self, value):
+        newnode = Node(value)
+        if self.head == None:
+            self.head = newnode
+        else:
+            sechead = self.head
+            while True:
+                if sechead.next == None:
+                    sechead.next = newnode
+                    break
+                sechead = sechead.next 
+    
+    def startremover(self):
+        if self.lelenght() == 1:
+            self.head = None
+        else:
+            sechead = self.head
+            self.head = sechead.next
+
+    def endremover(self):
+        sechead = self.head
+        i = 1
+        a = self.lelenght() -1
+        while True:
+            if i == a:
+                sechead.next = None
+                break
+            
+            sechead = sechead.next
+            i += 1
+
+        
+                
+            
+
+
+
+
+if __name__ == "__main__":
+    objcr = Objcreator()
+    objcr.Beginning(25)
+    objcr.Beginning(26)
+    objcr.addoverindex(1,'asgasdgasd')
+    objcr.endadder(21412)
+    objcr.endremover()
+    objcr.startremover()
+    objcr.print()
 
 
 
