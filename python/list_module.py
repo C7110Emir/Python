@@ -52,3 +52,7 @@ sadasfas(5)
 '''
 
 
+if '':
+    print(2)
+else:
+    print(25)

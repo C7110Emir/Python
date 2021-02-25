@@ -136,4 +136,5 @@ if __name__ == "__main__":
     binar.preorder(binar.root)
     #binar.inorder(binar.root)
     binar.postorder(binar.root)
-    
+    print(binar.valuesearch(13))
+
