@@ -139,7 +139,7 @@ if __name__ == "__main__":
     print(stack.size())
 
     queue = Queue()
-    queue.enqueue('fuck')
+    queue.enqueue('oof')
     print(queue.size())
     queue.dequeue()
     print(queue.size())
